@@ -1,5 +1,78 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+</head>
+<body>
 
+    <h1>Student Task Manager</h1>
+    <p>Manage your tasks and deadlines.</p>
+    <br>
+    
+    <h3> My Task</h3>
+    <main>
+        <div>
+            <h5>Task Display</h5>
+            <section>
+                <ol >
+                    <li>Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>
+                </ol>
+            </section>
+            <section>
+                <label for="filter">Filter Tasks:</label>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                </select>
+                <button>Delete Task</button>
+                <button>Mark as Completed</button>
+            </section>
+        </div>
+        <div>
+            <h5>Add Task</h5>
+            <section>
+                 <h5>Add Task</h5>
+                <label for="task">Title</label>
+                <input type="text" id="task">
+                <label for="due-date">Due Date</label>
+                <input type="date" id="due-date">
+                <label for="description">Description</label>
+                <input type="text" id="description">
+                <button>Add Task</button>
+            </section>
+        </div>
+
+    </main>
+    <br>
+    <h3>GPA calculator</h3>
+    <main>
+        <div>
+            <h5>Overall GPA</h5>
+            <p id="gpa">GPA:</p>
+        </div>
+        <div>
+            <h5>Calculate GPA</h5>
+            <section>
+                <label for="semi">Enter your semester:</label>
+                <input type="text" id="semi">
+                <input type="text" id="subjects" placeholder="Enter your subjects">
+                <input type="text" id="grades" placeholder="Enter your grades">
+                <button>Add Subject</button>
+            </section>
+            <section>
+                <button>Calculate GPA</button>
+                <button>Save</button>
+                <button>Reset</button>
+            </section>
+        </div>
+    </main>
+
+</body>
 
 
 
