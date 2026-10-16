@@ -12,30 +12,30 @@
     <br>
     
     <h3> My Task</h3>
-    <main>
-        <div>
+    <main id="task-manager">
+        <div id="task-list">
             <h5>Task Display</h5>
-            <section>
+            <section id="tasks">
                 <ol >
                     <li>Task 1</li>
                     <li>Task 2</li>
                     <li>Task 3</li>
                 </ol>
             </section>
-            <section>
+            <section id="task-operations">
                 <label for="filter">Filter Tasks:</label>
                 <select id="filter">
                     <option value="all">All</option>
                     <option value="completed">Completed</option>
                     <option value="pending">Pending</option>
                 </select>
-                <button>Delete Task</button>
-                <button>Mark as Completed</button>
+                <button id="delete-task">Delete Task</button>
+                <button id="mark-completed">Mark as Completed</button>
             </section>
         </div>
-        <div>
+        <div id="add-task">
             <h5>Add Task</h5>
-            <section>
+            <section id="add-task-form">
                  <h5>Add Task</h5>
                 <label for="task">Title</label>
                 <input type="text" id="task">
@@ -43,31 +43,32 @@
                 <input type="date" id="due-date">
                 <label for="description">Description</label>
                 <input type="text" id="description">
-                <button>Add Task</button>
+                <button id="add-task-btn">Add Task</button>
             </section>
         </div>
 
     </main>
     <br>
     <h3>GPA calculator</h3>
-    <main>
-        <div>
+    <main id="gpa-calculator">
+        <div id="gpa-display">
             <h5>Overall GPA</h5>
             <p id="gpa">GPA:</p>
         </div>
-        <div>
+        <div id="gpa-input">
             <h5>Calculate GPA</h5>
             <section>
                 <label for="semi">Enter your semester:</label>
                 <input type="text" id="semi">
                 <input type="text" id="subjects" placeholder="Enter your subjects">
                 <input type="text" id="grades" placeholder="Enter your grades">
-                <button>Add Subject</button>
+                <input type="number" id="credits" placeholder="Enter your credits">
+                <button id="add-subject">Add Subject</button>
             </section>
             <section>
-                <button>Calculate GPA</button>
-                <button>Save</button>
-                <button>Reset</button>
+                <button id="calculate-gpa">Calculate GPA</button>
+                <button id="save-gpa">Save</button>
+                <button id="reset-gpa">Reset</button>
             </section>
         </div>
     </main>
