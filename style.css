@@ -1,29 +1,29 @@
 html {
-    background: #6d74ac;
+    background: #c2e0e2;
 }
 
 body {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: rgb(9, 8, 8);
     justify-content: center;
     width: 80%;
     min-height: 100vh;
     margin: 0 auto;
+    margin-top: 0%;
+    padding: 3%;
     box-sizing: border-box;
-    background: linear-gradient(to right, #0e0d57 0%, #0a011b 100%);
+    background: linear-gradient(to right, #6491f0 0%, #cfe7e9 100%);
 }
 
-body > main {
+body main {
     width: 100%;
     box-sizing: border-box;
 }
 
-body h1 {
+body h1{
     text-align: center;
     font-size: 3rem;
-    margin-top: 2rem;
+    margin-top: 1%;
+  
 }
 
 body p {
@@ -31,3 +31,47 @@ body p {
     font-size: 1.5rem;
     margin-top: 1rem;
 }
+body h3{
+    font-style: bold;
+    font-size: 25px;
+}
+
+#task-manager{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    border-color: solid black;
+    border-radius: 5%;
+}
+#task-list{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+
+}
+#tasks{
+    border-style: outset;
+    width:80%;
+    height: 150px;
+}
+#task-operations{
+    width: 100%;
+    display: flex;
+    flex-direction: row;  
+}
+#task-operations button{
+    padding: 2%;
+    align-items: center;
+
+}
+#add-task{
+    display: flex;
+}
+
+#add-task-form{
+    display: flex;
+    flex-direction: row;
+
+}
+

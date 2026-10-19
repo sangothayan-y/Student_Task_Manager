@@ -14,38 +14,42 @@
     
     <h3> My Task</h3>
     <main id="task-manager">
-        <div id="task-list">
+        <div >
             <h5>Task Display</h5>
-            <section id="tasks">
-                <ol >
-                    <li>Task 1</li>
-                    <li>Task 2</li>
-                    <li>Task 3</li>
-                </ol>
-            </section>
-            <section id="task-operations">
-                <label for="filter">Filter Tasks:</label>
-                <select id="filter">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="pending">Pending</option>
-                </select>
-                <button id="delete-task">Delete Task</button>
-                <button id="mark-completed">Mark as Completed</button>
-            </section>
+                <div id="task-list">
+                    <section id="tasks">
+                        <ol >
+                            <li>Task 1</li>
+                            <li>Task 2</li>
+                            <li>Task 3</li>
+                        </ol>
+                    </section>
+                    <section id="task-operations">
+                    <label for="filter">Filter Tasks:</label>
+                     <select id="filter">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="pending">Pending</option>
+                    </select>
+                    <button id="delete-task">Delete Task</button>
+                    <button id="mark-completed">Mark as Completed</button>
+                 </section>
+                 </div>
         </div>
-        <div id="add-task">
+        <div>
             <h5>Add Task</h5>
+            <div id="add-task">
             <section id="add-task-form">
-                 <h5>Add Task</h5>
                 <label for="task">Title</label>
                 <input type="text" id="task">
                 <label for="due-date">Due Date</label>
                 <input type="date" id="due-date">
                 <label for="description">Description</label>
                 <input type="text" id="description">
-                <button id="add-task-btn">Add Task</button>
+                
             </section>
+            <button id="add-task-btn">Add Task</button>
+            </div>
         </div>
 
     </main>
