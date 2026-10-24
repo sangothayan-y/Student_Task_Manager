@@ -1,5 +1,5 @@
 html {
-    background: #c2e0e2;
+    background: #f6f8f8;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
     margin-top: 0%;
     padding: 3%;
     box-sizing: border-box;
-    background: linear-gradient(to right, #6491f0 0%, #cfe7e9 100%);
+    background: white;
 }
 
 body main {
@@ -24,6 +24,30 @@ body h1{
     font-size: 3rem;
     margin-top: 1%;
   
+}
+#header{
+    background-color: #ff840a;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+nav{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #011231;
+     border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
 }
 
 body p {
@@ -44,9 +68,7 @@ body h3{
     padding: 10px;
     border-radius: 20px;
 }
-#task-manager h5{
 
-}
 #task-list{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -120,5 +142,69 @@ body h3{
     border: 2px solid black;
     border-radius: 20px;
     
+}
+#gpa-display p{ 
+    text-align: left;
+    text-size-adjust: 20px;
+}
+#gpa{
+    display:inline-block;
 
+}
+#gpa-display2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+#gpa-display2 input{
+    width: 50%;
+    margin-left: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius:100%;
+}
+
+#gpa-input{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#gpa-cal{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+
+}
+#gpa-form{
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 5px;
+   
+}
+#gpa-form button{
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+#gpa-operations{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+   
+    border-left: 1px solid  black;
+   
+}
+#gpa-operations button{
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#gpa-operations input{
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 20px;
 }
