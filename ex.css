@@ -1,0 +1,50 @@
+
+@media(max-width:600px){
+    nav{
+        height: 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+    }
+    nav a{
+        margin: 5px;
+    }
+    body h3{
+        font-size: 15px;
+    }
+    #task-manager{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        border-radius: 10px;
+    }
+    #task-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #task-operations button{
+        height:20px;
+    }
+    #add-task{
+      border-radius: 10px;
+    }
+
+    #gpa-calculator{
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #gpa-display2{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+
+
+
+
+
+}
