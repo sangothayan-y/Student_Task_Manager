@@ -7,30 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main id="header">
+    <section id="header">
         
     <h1>Student Task Manager</h1>
     <p>Manage your tasks and deadlines.</p>
     <nav>
             
-            <a href="#task-manager">Task Manager</a></li>
-            <a href="#gpa-calculator">GPA Calculator</a></li>
+            <a href="#task-manager">Task Manager</a>
+            <a href="#gpa-calculator">GPA Calculator</a>
             
         </nav>
     <br>
-    </main>
+    </section>
     <h2> My Task</h2>
-    <main id="task-manager">
+    <section id="task-manager">
         <div >
             <h3>Task Display</h3>
                 <div id="task-list">
-                    <section id="tasks">
-                        <ol >
-                            <li>Task 1</li>
-                            <li>Task 2</li>
-                            <li>Task 3</li>
-                        </ol>
-                    </section>
+                        <section id="tasks">
+                            <ol id="task-list-txt" >
+                               
+                            </ol>
+                        </section>
                     <section id="task-operations">
                     <label for="filter">Filter Tasks:</label>
                      <select id="filter">
@@ -41,7 +39,7 @@
                     <div id="task-btn">
                     <button id="delete-task">Delete Task</button>
                     <button id="mark-completed">Mark as Completed</button>
-                    <div>
+                    </div>
                  </section>
                  </div>
         </div>
@@ -62,10 +60,10 @@
             </div>
         </div>
 
-    </main>
+    </section>
     <br>
     <h2>GPA calculator</h2>
-    <main id="gpa-calculator">
+    <section id="gpa-calculator">
         <div id="gpa-display">
             <h3>Overall GPA</h3>
             <div id="gpa-display2">
@@ -82,7 +80,21 @@
                 <label for="subjects">Enter your subjects:</label>
                 <input type="text" id="subjects" placeholder="Enter your subjects">
                 <label for="grades">Enter your grades:</label>
-                <input type="text" id="grades" placeholder="Enter your grades">
+
+               <select id="grades">
+                     <option value="4.0">A+</option>
+                     <option value="4.0">A</option>
+                     <option value="3.7">A-</option>
+                     <option value="3.3">B+</option>
+                     <option value="3.0">B</option>
+                     <option value="2.7">B-</option>
+                     <option value="2.3">C+</option>
+                     <option value="2.0">C</option>
+                     <option value="1.7">C-</option>
+                     <option value="1.3">D+</option>
+                     <option value="1.0">D</option>
+                     <option value="0.0">E</option>
+                </select>
                 <label for="credits">Enter subject credits:</label>
                 <input type="number" id="credits" placeholder="Enter subject credits">
                 <button id="add-subject">Add Subject</button>
@@ -95,7 +107,8 @@
             </section>
             </div>
         </div>
-    </main>
+    </section>
+    <script src="script.js"></script>
 
 </body>
 
