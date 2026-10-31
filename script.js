@@ -4,7 +4,7 @@
 const taskname =document.getElementById("task");
 const taskdate =document.getElementById("due-date");
 const taskdesc =document.getElementById("description");
-
+let selectedid = null;
 const addtaskbtn =document.getElementById("add-task-btn");
 
     let tasklist=[];
@@ -20,25 +20,28 @@ const addtaskbtn =document.getElementById("add-task-btn");
 
 
     function displaytask(){
-    const tasklistcontainer=document.getElementById("task-list-txt");
-    tasklistcontainer.innerHTML="";
-    tasklist.forEach(function(task){
-    const li= document.createElement("li");
-    li.dataset.id=task.id;
+        const tasklistcontainer=document.getElementById("task-list-txt");
+        tasklistcontainer.innerHTML="";
+
+
+        tasklist.forEach(function(task){
+        const li= document.createElement("li");
+        li.dataset.id=task.id;
         li.innerHTML=task.name +" "+task.date+" "+task.desc;
         tasklistcontainer.appendChild(li);
-        let selectid=li.dataset.id;
-    });
+       
+        li.addEventListener("click",function(){
+            selectedid=this.dataset.id;
 
-
-console.log(selectid);
-
-    }
-
-
-
-let selectid=li.dataset.id;
-comsole.log(selectid);
-function deletetask(){
-
+            const deletebtn=document.getElementById("delete-task");
+            deletebtn.addEventListener("click",function(){
+                tasklist.forEach(function(task,index){
+                    if(task.id==selectedid){
+                        tasklist.splice(index,1);
+                    }
+                })
+        })
+        });
+    })
 }
+
