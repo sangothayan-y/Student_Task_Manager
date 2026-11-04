@@ -1,7 +1,11 @@
 html {
     background: #f6f8f8;
 }
-
+button{
+    background-color: #2A1A0E;
+    color: #FEF3E2;
+    border-color: #F4AE52;
+}
 body {
     color: rgb(9, 8, 8);
     justify-content: center;
@@ -69,6 +73,14 @@ body h3{
     border: 2px solid black;
     padding: 10px;
     border-radius: 20px;
+    background-color: #D4621A;
+    color: #FEF3E2;
+}
+#task-list-txt li.selected {
+    background-color: #F4AE52;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 #task-list{
@@ -79,6 +91,19 @@ body h3{
     padding: 10px;
     border-radius: 20px;
     height: 70%;
+    background-color: #FEF3E2;
+}
+#task-list-txt{
+    padding-left:25px;
+    color:black;
+}
+#task-list-txt li{
+  color: black;
+    margin-bottom: 15px;
+    overflow-wrap: anywhere;
+}
+#task-list-txt button {
+    margin-left: 10px;
 }
 #task-list #tasks{
     border:2px solid black;
@@ -91,13 +116,21 @@ body h3{
     grid-template-rows:1fr 1fr 1fr 1fr;
     gap: 20px;
 }
-
+.completed{
+    text-decoration:line-through;
+}
 #task-btn{
     display: grid;
    grid-template-columns:1fr 1fr ;
    gap: 10px;
     
 }
+#task{
+    min-width: 0;
+    overflow-wrap:anywhere;
+
+}
+
 #task-operations button{
   
     border-radius: 20px;
@@ -111,6 +144,7 @@ body h3{
      border: 2px solid black;
     padding: 10px;
     border-radius: 20px;
+     background-color: #FEF3E2;
 
     }
 #add-task-form{
